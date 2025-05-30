@@ -1,13 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
-    <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nebil Shebab - Self-Taught Web Developer Portfolio</title>
+    <meta name="description" content="Nebil Shebab - Self-taught web developer from Ethiopia specializing in modern, responsive websites using HTML5, CSS3, and JavaScript. View my portfolio and projects.">
+    <meta name="keywords" content="web developer, Ethiopia, HTML, CSS, JavaScript, portfolio, responsive design">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="logo">Nebil Shebab</a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1>Nebil Shebab – Self-Taught Web Developer</h1>
+                <p class="tagline">Building websites that connect, convert, and inspire</p>
+                <div class="cta-buttons">
+                    <a href="projects.html" class="btn btn-primary">
+                        <i class="fas fa-code"></i>
+                        View My Work
+                    </a>
+                    <a href="contact.html" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview -->
+    <section id="about" class="about-preview">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">A passionate self-taught developer from Ethiopia, dedicated to creating meaningful web experiences</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-text fade-in">
+                    <p>My journey into web development began with curiosity and determination. <span class="highlight">Self-taught from Ethiopia</span>, I've overcome challenges through dedication and continuous learning.</p>
+                    
+                    <p>Every day, I push myself to learn something new, whether it's mastering a new framework, improving my design skills, or understanding better development practices.</p>
+                    
+                    <p><strong>Mission:</strong> To build fast, beautiful, and meaningful websites that make a real difference for businesses and users alike.</p>
+                    
+                    <p><strong>Vision:</strong> To become a world-class full-stack developer and contribute to the global tech community from right here in Ethiopia.</p>
+                    
+                    <a href="about.html" class="btn btn-secondary">
+                        <i class="fas fa-arrow-right"></i>
+                        Learn More About Me
+                    </a>
+                </div>
+                
+                <div class="about-image fade-in">
+                    <div class="profile-card">
+                        <div class="profile-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="profile-name">Nebil Shebab</div>
+                        <div class="profile-title">Web Developer • Ethiopia</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Preview -->
+    <section id="skills" class="skills-preview">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Core Skills</h2>
+                <p class="section-subtitle">Technologies and tools I use to bring ideas to life</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="skill-name">HTML5</div>
+                    <div class="skill-description">Semantic markup and modern web standards</div>
+                </div>
+                
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="skill-name">CSS3</div>
+                    <div class="skill-description">Responsive design and modern layouts</div>
+                </div>
+                
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-description">Interactive functionality and modern ES6+</div>
+                </div>
+                
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <div class="skill-name">Git</div>
+                    <div class="skill-description">Version control and collaboration</div>
+                </div>
+                
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="skill-name">Responsive Design</div>
+                    <div class="skill-description">Mobile-first development approach</div>
+                </div>
+                
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="skill-name">SEO</div>
+                    <div class="skill-description">Search engine optimization best practices</div>
+                </div>
+            </div>
+            
+            <div class="text-center fade-in" style="margin-top: 2rem;">
+                <a href="skills.html" class="btn btn-secondary">
+                    <i class="fas fa-cogs"></i>
+                    View All Skills & Tools
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Preview -->
+    <section id="projects" class="projects-preview">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">A showcase of my recent work and capabilities</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Business Landing Page</h3>
+                        <p class="project-description">A professional landing page designed to help businesses grow with compelling CTAs, service showcases, and testimonials.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/business.html" class="btn btn-secondary btn-small">
+                                <i class="fas fa-eye"></i>
+                                View Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Personal Portfolio Website</h3>
+                        <p class="project-description">A creative portfolio showcasing skills, projects, and personality with modern design and smooth interactions.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Animations</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/portfolio.html" class="btn btn-secondary btn-small">
+                                <i class="fas fa-eye"></i>
+                                View Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Digital Agency Website</h3>
+                        <p class="project-description">A comprehensive agency website featuring services, portfolio, team members, and lead generation capabilities.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Forms</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/agency.html" class="btn btn-secondary btn-small">
+                                <i class="fas fa-eye"></i>
+                                View Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center fade-in" style="margin-top: 2rem;">
+                <a href="projects.html" class="btn btn-secondary">
+                    <i class="fas fa-folder-open"></i>
+                    View All Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Preview -->
+    <section id="contact" class="contact-preview">
+        <div class="container">
+            <div class="contact-content fade-in">
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">Ready to bring your ideas to life? I'm here to help you build something amazing.</p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>nebilshebab949@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-telegram"></i>
+                        <span>@neba1596</span>
+                    </div>
+                </div>
+                
+                <a href="contact.html" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i>
+                    Send Message
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Nebil Shebab. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
